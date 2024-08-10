@@ -1,12 +1,39 @@
-import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import './App.css'
+import { Layout } from './components/Layout'
+import { Orders } from './pages/Orders'
+import { Clients } from './pages/Clients'
+import { Products } from './pages/Products'
+
+const router = createBrowserRouter([
+  {
+    path: '/pedidos',
+    element: (
+      <Layout>
+        <Orders />
+      </Layout>
+    )
+  },
+  {
+    path: '/clientes',
+    element: (
+      <Layout>
+        <Clients />
+      </Layout>
+    )
+  },
+  {
+    path: '/produtos',
+    element: (
+      <Layout>
+        <Products />
+      </Layout>
+    )
+  }
+])
 
 const App = () => {
-  return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
-  );
-};
+  return <RouterProvider router={router} />
+}
 
-export default App;
+export default App
