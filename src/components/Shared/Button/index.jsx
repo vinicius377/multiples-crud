@@ -1,7 +1,7 @@
 import { Button as ButtonBase } from '@mui/material'
 
 export function Button({children, ...rest}) {
-  return <ButtonBase {...rest}>{children}</ButtonBase>
+  return <ButtonBase variant="contained" {...rest}>{children}</ButtonBase>
 }
 //interface Client {
 //	name: string;

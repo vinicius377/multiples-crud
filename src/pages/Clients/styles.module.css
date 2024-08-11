@@ -9,6 +9,38 @@
 }
 
 .form {
-  margin: auto;
+  margin: 1rem auto;
   max-width: 50rem
+}
+
+.header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.btnBox {
+  margin: 0.5rem 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end
+}
+
+.tableWrapper {
+  width: calc(100vw - 8.75rem)
+}
+
+.tableBox {
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+@media (max-width: 600) {
+  .tableWrapper {
+    width: calc(100vw - 4.75rem)
+  }
 }

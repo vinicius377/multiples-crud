@@ -35,7 +35,7 @@ export function Menu({children, items = []}) {
         }}
       >
         {items.map(item => (
-          <MenuItem onClick={item.action}>{item.label}</MenuItem>
+          <MenuItem key={item.label} onClick={item.action}>{item.label}</MenuItem>
         ))}
       </MenuBase>
     </div>
