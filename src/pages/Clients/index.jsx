@@ -131,7 +131,6 @@ export function Clients() {
               register={register}
               name="name"
               placeholder="Digite o nome"
-              label="Nome"
               error={!!errors.name}
               helperText={errors.name?.message}
             />
@@ -141,7 +140,6 @@ export function Clients() {
               register={register}
               name="email"
               placeholder="Digite o e-mail"
-              label="E-mail"
               error={!!errors.email}
               helperText={errors.email?.message}
             />
@@ -151,7 +149,6 @@ export function Clients() {
               register={register}
               name="yearsOld"
               placeholder="Digite a idade"
-              label="Idade"
               error={!!errors.yearsOld}
               helperText={errors.yearsOld?.message}
             />
@@ -161,7 +158,6 @@ export function Clients() {
               register={register}
               name="phoneNumber"
               placeholder="Digite o número de telefone"
-              label="Telefone"
               error={!!errors.phoneNumber}
               helperText={errors.phoneNumber?.message}
             />
@@ -171,7 +167,6 @@ export function Clients() {
               register={register}
               name="cpf"
               placeholder="Digite o CPF"
-              label="CPF"
               error={!!errors.cpf}
               helperText={errors.cpf?.message}
             />

@@ -6,3 +6,9 @@
 .main {
   flex: 1;
 }
+
+@media (max-width: 600px) {
+  .main {
+      margin-top: 2rem;
+  }
+}

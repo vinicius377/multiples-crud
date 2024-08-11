@@ -15,7 +15,7 @@
 }
 
 .menuOptionActive {
-    border-bottom-width: 2px;
+  border-bottom-width: 2px;
   border-bottom-color: #000
 }
 
@@ -26,4 +26,7 @@
 .hambIcon svg {
   font-size: 2.5rem;
   cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

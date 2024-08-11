@@ -9,6 +9,15 @@
       "cpf": "626.276.853-09"
     }
   ],
-  "produtos": [],
+  "produtos": [
+    {
+      "name": "Produto 13",
+      "description": "aaaaa",
+      "value": 23,
+      "qty": 10,
+      "category": "Categoria",
+      "id": "3f5d"
+    }
+  ],
   "pedidos": []
 }

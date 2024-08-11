@@ -6,15 +6,16 @@ export class ProductService {
   }
 
   listProducts() {
-    return this.api.get()
+    return this.api.get('').then(x => x.data)
   }
 
   createProduct(data) {
-    return this.api.post(data)
+    return this.api.post('',data).then(x => x.data)
   }
 
   updateProduct(data) {
-    return this.api.put(data)
+    console.log(data)
+    return this.api.put(data.id,data).then(x => x.data)
   }
 
   deleteProduct(id) {
@@ -22,5 +23,5 @@ export class ProductService {
   }
 }
 
-const api = new API()
+const api = new API('produtos')
 export const productService = new ProductService(api)

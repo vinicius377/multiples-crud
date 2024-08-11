@@ -63,7 +63,7 @@ function DrawerBox({ children }) {
 
   return (
     <>
-      <div className={styles.hambIcon}  onClick={toggleDrawer(true)}>
+      <div className={styles.hambIcon} onClick={toggleDrawer(true)}>
         <MenuIcon />
       </div>
       <DrawerBase open={open} onClose={toggleDrawer(false)}>
