@@ -275,7 +275,7 @@ export function Orders() {
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                       <TableCell align="right">{row.id}</TableCell>
-                      <TableCell component="th" scope="row">
+                      <TableCell component="th" align="right" scope="row">
                         {getClientName(row.clientId)}
                       </TableCell>
                       <TableCell align="right">{getPaymentMethd(row.paymentMethod)}</TableCell>
