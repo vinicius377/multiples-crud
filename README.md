@@ -1,29 +1,26 @@
-# Rsbuild Project
+## CRUD de produtos, clientes e pedidos
 
-## Setup
+Esse projeto foi feito para a etapa de teste técnico no processo seletivo de Desenvolvedor Web
 
-Install the dependencies:
+### Pré-requisitos
 
-```bash
-pnpm install
-```
+[NodeJs](https://nodejs.org/pt)
 
-## Get Started
+Como executar
 
-Start the dev server:
-
-```bash
-pnpm dev
-```
-
-Build the app for production:
+- Clonar esse repositório e abri-lo.
+- Executar os seguintes comandos, sem sequência.
 
 ```bash
-pnpm build
+    ## Vai instalar todas as dependências do projeto
+    npm i
+
+    ## Vai executar o projeto web, junto com o servidor
+    npm start
 ```
 
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
+### Principais tecnologias usadas
+- ReactJS
+- React router dom
+- Material UI
+- Material Icons

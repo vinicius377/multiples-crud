@@ -6,15 +6,15 @@ export class OrderService {
   }
 
   listOrders() {
-    return this.api.get()
+    return this.api.get('').then(x => x.data)
   }
 
   createOrder(data) {
-    return this.api.post(data)
+    return this.api.post('', data).then(x => x.data)
   }
 
   updateOrder(data) {
-    return this.api.put(data)
+    return this.api.put(data.id, data).then(x => x.data)
   }
 
   deleteOrder(id) {
@@ -22,5 +22,5 @@ export class OrderService {
   }
 }
 
-const api = new API()
-export const clientService = new OrderService(api)
+const api = new API('pedidos')
+export const orderService = new OrderService(api)

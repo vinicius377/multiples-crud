@@ -1,0 +1,62 @@
+.Orders {
+  padding: 1rem;
+  width: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.form {
+  margin: 1rem auto;
+  max-width: 50rem
+}
+
+.header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header svg {
+  cursor: pointer;
+}
+
+.btnBox {
+  margin: 0.5rem 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end
+}
+
+.tableWrapper {
+  width: calc(100vw - 8.75rem)
+}
+
+.tableBox {
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+.productQty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productQty + .productQty {
+  margin-top: 0.75rem
+}
+
+.productInfo span {
+  font-size: 1.125rem;
+  font-weight: 600
+}
+
+@media (max-width: 600) {
+  .tableWrapper {
+    width: calc(100vw - 4.75rem)
+  }
+}
+
