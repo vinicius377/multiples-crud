@@ -1,1 +1,13 @@
-{}
+{
+  "clientes": [
+    {
+      "id": "3751",
+      "name": "Vinicius",
+      "email": "viniciusep181@gmail.com",
+      "phoneNumber": "88 992647992",
+      "cpf": "626.276.853-09"
+    }
+  ],
+  "produtos": [],
+  "pedidos": []
+}

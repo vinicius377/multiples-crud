@@ -4,6 +4,6 @@ import { Drawer } from './Drawer'
 export function Layout({children}) {
   return <div className={styles.Layout}>
     <Drawer /> 
-    <main>{children}</main>
+    <main className={styles.main}>{children}</main>
   </div>
 }

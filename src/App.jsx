@@ -7,6 +7,14 @@ import { Products } from './pages/Products'
 
 const router = createBrowserRouter([
   {
+    path: '/',
+    element: (
+      <Layout>
+        Todo
+      </Layout>
+    )
+  },
+  {
     path: '/pedidos',
     element: (
       <Layout>
